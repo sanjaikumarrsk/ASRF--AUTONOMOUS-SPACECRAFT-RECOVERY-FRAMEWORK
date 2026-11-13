@@ -1,0 +1,151 @@
+.health-monitor {
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  color: var(--color-primary, #1a365d);
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+}
+
+.subsystem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.subsystem-card {
+  background: var(--bg-card, #ffffff);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  border-left: 4px solid #cbd5e1;
+}
+
+.subsystem-card.status-healthy { border-left-color: var(--color-healthy, #16a34a); }
+.subsystem-card.status-degraded { border-left-color: var(--color-warning, #d97706); }
+.subsystem-card.status-fault { border-left-color: var(--color-fault, #dc2626); }
+.subsystem-card.status-monitoring { border-left-color: var(--color-earth, #2563eb); }
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+.sub-icon {
+  color: var(--color-secondary, #0891b2);
+}
+
+.status-badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.status-badge.status-healthy { background: #dcfce7; color: #166534; }
+.status-badge.status-degraded { background: #fef3c7; color: #92400e; }
+.status-badge.status-fault { background: #fee2e2; color: #991b1b; }
+.status-badge.status-monitoring { background: #dbeafe; color: #1e40af; }
+
+.card-body {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.health-circle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.circular-chart {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #f1f5f9;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+.status-healthy .circle { stroke: var(--color-healthy, #16a34a); }
+.status-degraded .circle { stroke: var(--color-warning, #d97706); }
+.status-fault .circle { stroke: var(--color-fault, #dc2626); }
+.status-monitoring .circle { stroke: var(--color-earth, #2563eb); }
+
+.percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #1e293b;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.telemetry-stats {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.stat-label {
+  color: #64748b;
+}
+
+.stat-value {
+  font-weight: 500;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.mono {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+}
+
+.trend-val {
+  text-transform: capitalize;
+}

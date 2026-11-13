@@ -1,0 +1,134 @@
+.asrf-sidebar {
+  width: 240px;
+  min-width: 240px;
+  background-color: #0b1328;
+  color: #94a3b8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 1.25rem 1rem;
+  box-sizing: border-box;
+}
+
+.asrf-sidebar-header {
+  padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  margin-bottom: 1.25rem;
+}
+
+.asrf-sidebar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.asrf-sidebar-logo {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.asrf-sidebar-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.asrf-brand-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.asrf-brand-sub {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #94a3b8;
+  line-height: 1.2;
+}
+
+.asrf-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+}
+
+.asrf-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #94a3b8;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  width: 100%;
+  text-align: left;
+}
+
+.asrf-nav-item:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.asrf-nav-item.active {
+  background-color: #ffffff;
+  color: #0b1328;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.asrf-nav-item.active .asrf-nav-icon {
+  color: #0b1328;
+}
+
+.asrf-nav-icon {
+  flex-shrink: 0;
+}
+
+.asrf-sidebar-footer {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.asrf-logout-btn {
+  color: #94a3b8;
+}
+
+.asrf-logout-btn:hover {
+  color: #f87171;
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+@media (max-width: 900px) {
+  .asrf-sidebar {
+    width: 72px;
+    min-width: 72px;
+    padding: 1rem 0.5rem;
+  }
+  .asrf-sidebar-brand-text,
+  .asrf-nav-item span {
+    display: none;
+  }
+  .asrf-sidebar-logo {
+    margin: 0 auto;
+  }
+  .asrf-nav-item {
+    justify-content: center;
+    padding: 0.75rem 0;
+  }
+}

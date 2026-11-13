@@ -1,0 +1,103 @@
+.telemetry-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-lg);
+  transition: box-shadow var(--transition-normal), border-color var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.telemetry-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-accent);
+}
+
+.telemetry-card--compact {
+  padding: var(--space-sm) var(--space-md);
+}
+
+.telemetry-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.telemetry-card__icon {
+  color: var(--color-primary-light);
+  display: flex;
+  align-items: center;
+}
+
+.telemetry-card__label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+.telemetry-card__trend {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.trend--up { color: var(--color-fault); }
+.trend--down { color: var(--color-healthy); }
+.trend--stable { color: var(--text-tertiary); }
+
+.telemetry-card__value-row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-xs);
+}
+
+.telemetry-card__value {
+  font-family: var(--font-mono);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.telemetry-card--compact .telemetry-card__value {
+  font-size: 1.25rem;
+}
+
+.telemetry-card__unit {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.telemetry-card__status-bar {
+  margin-top: var(--space-sm);
+  height: 3px;
+  background: var(--bg-light-gray);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.telemetry-card__status-indicator {
+  height: 100%;
+  border-radius: 2px;
+  width: 100%;
+  transition: background-color var(--transition-normal);
+}
+
+.telemetry-card__status-indicator--healthy { background: var(--color-healthy); }
+.telemetry-card__status-indicator--warning { background: var(--color-warning); }
+.telemetry-card__status-indicator--fault { background: var(--color-fault); }
+.telemetry-card__status-indicator--monitoring { background: var(--color-monitoring); }
+
+/* Border accent by status */
+.telemetry-card--healthy { border-left: 3px solid var(--color-healthy); }
+.telemetry-card--warning { border-left: 3px solid var(--color-warning); }
+.telemetry-card--fault { border-left: 3px solid var(--color-fault); }
+.telemetry-card--monitoring { border-left: 3px solid var(--color-monitoring); }
+

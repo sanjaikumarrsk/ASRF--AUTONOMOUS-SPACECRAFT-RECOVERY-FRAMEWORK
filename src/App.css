@@ -1,0 +1,45 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+}
+
+.asrf-app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.asrf-main-viewport {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Common internal page layout with sidebar */
+.asrf-dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f8fafc;
+}
+
+.asrf-dashboard-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem 3rem 2rem;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .asrf-dashboard-main {
+    padding: 1rem;
+  }
+}

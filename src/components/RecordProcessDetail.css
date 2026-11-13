@@ -1,0 +1,56 @@
+.record-process-detail { margin: 0 0 2rem; padding: 1.5rem; border: 1px solid #bfdbfe; border-radius: 0.75rem; background: linear-gradient(135deg, #f8fbff 0%, #ffffff 60%); box-shadow: 0 8px 24px rgba(30, 64, 175, 0.08); }
+.process-detail-header { display: flex; justify-content: space-between; gap: 1rem; align-items: flex-start; border-bottom: 1px solid #dbeafe; padding-bottom: 1rem; }
+.process-detail-eyebrow { margin: 0 0 0.35rem; color: #2563eb; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; }
+.process-detail-header h2 { margin: 0; color: #1e3a8a; font-size: 1.4rem; }
+.process-detail-subtitle, .process-muted, .process-empty, .process-note { color: #64748b; font-size: 0.85rem; line-height: 1.5; }
+.process-detail-subtitle { margin: 0.4rem 0 0; }
+.process-close { display: inline-flex; padding: 0.45rem; border: 1px solid #cbd5e1; border-radius: 0.4rem; color: #475569; background: #fff; cursor: pointer; }
+.process-close:hover { color: #1d4ed8; border-color: #93c5fd; }
+.process-summary-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.75rem; padding: 1rem 0; }
+.process-summary-grid > div { display: flex; flex-direction: column; gap: 0.3rem; padding: 0.75rem; border: 1px solid #e2e8f0; border-radius: 0.5rem; background: #fff; }
+.process-summary-grid span, .reading-cell span, .rollback-detail-row span { color: #64748b; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.process-summary-grid strong { color: #1e293b; font-size: 0.82rem; }
+.process-mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; overflow-wrap: anywhere; }
+.process-detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.process-card { min-width: 0; padding: 1rem; border: 1px solid #e2e8f0; border-radius: 0.6rem; background: #fff; }
+.process-card-wide, .process-timeline-card { grid-column: 1 / -1; }
+.process-card-title { display: flex; align-items: center; gap: 0.5rem; padding-bottom: 0.7rem; border-bottom: 1px solid #eef2f7; color: #1d4ed8; }
+.process-card-title h3 { margin: 0; color: #1e3a8a; font-size: 0.82rem; letter-spacing: 0.07em; }
+.reading-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.6rem; }
+.reading-cell { display: flex; flex-direction: column; gap: 0.25rem; padding: 0.65rem; border-radius: 0.4rem; background: #f8fafc; }
+.reading-cell strong { color: #0f172a; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 0.9rem; }
+.process-badge { display: inline-flex; width: fit-content; padding: 0.2rem 0.5rem; border: 1px solid transparent; border-radius: 999px; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+.process-badge.is-success { color: #166534; background: #dcfce7; border-color: #bbf7d0; }
+.process-badge.is-danger { color: #991b1b; background: #fee2e2; border-color: #fecaca; }
+.process-badge.is-warning { color: #92400e; background: #fef3c7; border-color: #fde68a; }
+.process-badge.is-neutral { color: #475569; background: #f1f5f9; border-color: #cbd5e1; }
+.process-row { display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; color: #64748b; font-size: 0.76rem; }
+.decision-block, .verification-block, .outcome-block { display: flex; flex-direction: column; gap: 0.45rem; padding: 0.75rem 0; border-bottom: 1px solid #eef2f7; }
+.decision-block:last-child, .verification-block:last-child, .outcome-block:last-child { border-bottom: 0; }
+.decision-block strong, .verification-block strong, .outcome-block strong { color: #1e293b; font-size: 0.9rem; }
+.decision-block p, .verification-block p, .outcome-block p, .pathway-item p { margin: 0; color: #64748b; font-size: 0.8rem; line-height: 1.45; }
+.decision-block small, .verification-block small { color: #94a3b8; font-size: 0.72rem; }
+.pathway-item { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.75rem; padding: 0.75rem 0; border-bottom: 1px solid #eef2f7; }
+.pathway-item strong { color: #1e293b; font-size: 0.85rem; }
+.process-note { margin: 0.75rem 0 0; font-size: 0.75rem; }
+.process-empty { margin: 0.8rem 0 0; }
+.core-checks { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 0.75rem; color: #166534; font-size: 0.72rem; }
+.core-checks span { display: inline-flex; align-items: center; gap: 0.25rem; }
+.rollback-status { margin: 0.8rem 0; }
+.rollback-detail-row { display: flex; justify-content: space-between; gap: 1rem; padding: 0.55rem 0; border-bottom: 1px solid #eef2f7; font-size: 0.8rem; }
+.rollback-detail-row strong { color: #1e293b; }
+.rollback-path { display: flex; justify-content: space-between; align-items: center; gap: 0.35rem; margin-top: 0.9rem; padding: 0.7rem; border-radius: 0.4rem; background: #eff6ff; color: #1e40af; font-size: 0.7rem; text-align: center; }
+.process-timeline { display: flex; flex-direction: column; gap: 0.7rem; margin-top: 0.85rem; }
+.process-timeline-item { display: grid; grid-template-columns: 0.7rem minmax(0, 1fr) auto; gap: 0.65rem; align-items: start; padding: 0.55rem 0; border-bottom: 1px solid #f1f5f9; }
+.process-timeline-item:last-child { border-bottom: 0; }
+.process-timeline-dot { width: 0.65rem; height: 0.65rem; margin-top: 0.25rem; border-radius: 50%; background: #64748b; }
+.process-timeline-dot.telemetry { background: #0891b2; }
+.process-timeline-dot.fault { background: #dc2626; }
+.process-timeline-dot.decision { background: #2563eb; }
+.process-timeline-dot.verification { background: #7c3aed; }
+.process-timeline-dot.execution { background: #16a34a; }
+.process-timeline-item strong { color: #1e293b; font-size: 0.82rem; }
+.process-timeline-item p { margin: 0.15rem 0 0; color: #64748b; font-size: 0.75rem; }
+.process-timeline-item time { color: #64748b; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 0.68rem; white-space: nowrap; }
+@media (max-width: 900px) { .process-summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .reading-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .record-process-detail { padding: 1rem; } .process-detail-grid { grid-template-columns: 1fr; } .process-card-wide, .process-timeline-card { grid-column: auto; } .process-summary-grid, .reading-grid { grid-template-columns: 1fr; } .process-timeline-item { grid-template-columns: 0.7rem minmax(0, 1fr); } .process-timeline-item time { grid-column: 2; } }

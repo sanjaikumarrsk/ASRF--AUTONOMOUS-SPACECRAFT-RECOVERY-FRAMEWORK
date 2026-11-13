@@ -1,0 +1,74 @@
+[
+  {
+    "file": "/images/mars/mars-surface.jpg",
+    "title": "Mars surface panorama",
+    "source": "NASA Mars Exploration Program / JPL-Caltech",
+    "url": "https://mars.nasa.gov/system/downloadable_items/46566_PIA25183.jpg",
+    "credit": "NASA/JPL-Caltech",
+    "license": "Public domain under NASA image policy"
+  },
+  {
+    "file": "/images/rover/rover-landscape-web.jpg",
+    "title": "Mars rover landscape",
+    "source": "NASA Mars Exploration Program / JPL-Caltech",
+    "url": "https://mars.nasa.gov/system/downloadable_items/45580_PIA24543-RoverLandscapeWithArm.jpg",
+    "credit": "NASA/JPL-Caltech/MSSS",
+    "license": "Public domain under NASA image policy; locally resized for web delivery"
+  },
+  {
+    "file": "/images/rover-components/rover-wheel.jpg",
+    "title": "Rover wheel component",
+    "source": "NASA/JPL-Caltech",
+    "url": "https://mars.nasa.gov/",
+    "credit": "NASA/JPL-Caltech",
+    "license": "Public domain under NASA image policy"
+  },
+  {
+    "file": "/images/rover-components/robotic-arm.jpg",
+    "title": "Rover robotic arm component",
+    "source": "NASA/JPL-Caltech",
+    "url": "https://mars.nasa.gov/",
+    "credit": "NASA/JPL-Caltech",
+    "license": "Public domain under NASA image policy"
+  },
+  {
+    "file": "/images/rover-components/mast-camera.jpg",
+    "title": "Rover mast camera component",
+    "source": "NASA/JPL-Caltech",
+    "url": "https://mars.nasa.gov/",
+    "credit": "NASA/JPL-Caltech",
+    "license": "Public domain under NASA image policy"
+  },
+  {
+    "file": "/images/earth/earth-from-space.jpg",
+    "title": "Earth from space",
+    "source": "NASA Earth Observatory",
+    "url": "https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73909/world.topo.bathy.200412.3x5400x2700.jpg",
+    "credit": "NASA Goddard Space Flight Center",
+    "license": "Public domain under NASA image policy"
+  },
+  {
+    "file": "/images/space/deep-space-galaxy.jpg",
+    "title": "NGC 4414 deep-space galaxy",
+    "source": "Wikimedia Commons / NASA-ESA Hubble material",
+    "url": "https://commons.wikimedia.org/wiki/File:NGC_4414_(NASA-med).jpg",
+    "credit": "NASA/ESA/Hubble Heritage Team",
+    "license": "Copyright-free NASA/ESA Hubble material with source credit required"
+  },
+  {
+    "file": "/images/mission-control/mission-control.jpg",
+    "title": "Flight controllers in mission control",
+    "source": "Wikimedia Commons / NASA",
+    "url": "https://commons.wikimedia.org/wiki/File:ISS-46_Expedition_46_flight_controllers_in_the_Mission_Control_Center.jpg",
+    "credit": "NASA",
+    "license": "Public domain NASA imagery"
+  },
+  {
+    "file": "/images/spacecraft/galileo-earth.jpg",
+    "title": "Earth photographed by Galileo",
+    "source": "NASA Jet Propulsion Laboratory",
+    "url": "https://www.jpl.nasa.gov/images/pia00232-earth-departing-image-by-galileo/",
+    "credit": "NASA/JPL",
+    "license": "Public domain NASA/JPL imagery"
+  }
+]

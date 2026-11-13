@@ -1,0 +1,15 @@
+.ai-insights { background: #fff; border: 1px solid #dbe4ef; border-radius: 8px; padding: 1rem; }
+.ai-insights__header, .ai-insights__controls { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.ai-insights__header { margin-bottom: 1rem; }
+.ai-insights__header .section-title { display: flex; align-items: center; gap: .45rem; margin: .25rem 0 0; }
+.ai-insights__safety { color: #92400e; font-size: .75rem; display: flex; align-items: center; gap: .25rem; }
+.ai-insights__controls select, .ai-insights__controls button { border: 1px solid #cbd5e1; border-radius: 5px; padding: .55rem .7rem; background: #fff; }
+.ai-insights__controls button { background: #0f3d63; color: #fff; cursor: pointer; display: flex; align-items: center; gap: .4rem; }
+.ai-insights__controls button:disabled { opacity: .55; cursor: not-allowed; }
+.ai-insights__message { color: #64748b; font-size: .85rem; margin: .9rem 0 0; }
+.ai-insights__message.error { color: #b91c1c; }
+.ai-insights__result { margin-top: .9rem; padding: .8rem; border-left: 3px solid #2563eb; background: #f8fafc; white-space: pre-wrap; }
+.ai-insights__result.unavailable { border-left-color: #d97706; }
+.ai-insights__result p { margin: .35rem 0 0; font-size: .85rem; line-height: 1.5; }
+.spin { animation: ai-spin 1s linear infinite; }
+@keyframes ai-spin { to { transform: rotate(360deg); } }

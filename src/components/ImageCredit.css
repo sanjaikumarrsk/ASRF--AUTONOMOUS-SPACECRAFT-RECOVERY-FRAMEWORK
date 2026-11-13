@@ -1,0 +1,53 @@
+.image-credit {
+  position: absolute;
+  padding: 4px 8px;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px);
+  border-radius: var(--radius-sm);
+  font-size: 0.625rem;
+  color: var(--text-secondary);
+  opacity: 0.6;
+  transition: opacity var(--transition-fast);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.image-credit:hover,
+*:hover > .image-credit {
+  opacity: 1;
+}
+
+.credit-bottom-right {
+  bottom: var(--space-sm);
+  right: var(--space-sm);
+}
+
+.credit-bottom-left {
+  bottom: var(--space-sm);
+  left: var(--space-sm);
+}
+
+.credit-top-right {
+  top: var(--space-sm);
+  right: var(--space-sm);
+}
+
+.credit-top-left {
+  top: var(--space-sm);
+  left: var(--space-sm);
+}
+
+.credit-text {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.credit-source {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.credit-sep {
+  color: var(--text-tertiary);
+}

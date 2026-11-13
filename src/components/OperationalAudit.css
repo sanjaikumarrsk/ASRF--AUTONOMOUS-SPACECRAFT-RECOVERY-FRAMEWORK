@@ -1,0 +1,11 @@
+.operational-audit { display: grid; gap: 1rem; }
+.operational-audit { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.audit-card { border: 1px solid #dbe4ef; border-radius: 6px; padding: .9rem; background: #fff; display: grid; gap: .25rem; }
+.audit-card span, .audit-card small { color: #64748b; font-size: .78rem; }
+.audit-card strong { color: #0f3d63; font-size: 1.5rem; font-family: var(--font-mono, monospace); }
+.audit-table-wrap { grid-column: 1 / -1; overflow-x: auto; background: #fff; border: 1px solid #dbe4ef; }
+.audit-table { width: 100%; border-collapse: collapse; font-size: .82rem; }
+.audit-table th, .audit-table td { text-align: left; padding: .7rem; border-bottom: 1px solid #e2e8f0; }
+.audit-table th { color: #475569; background: #f8fafc; }
+.audit-empty { color: #64748b; text-align: center !important; }
+@media (max-width: 760px) { .operational-audit { grid-template-columns: 1fr; } }

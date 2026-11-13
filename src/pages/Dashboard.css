@@ -1,0 +1,679 @@
+/* ASRF Aerospace Scientific Telemetry Dashboard Styling */
+.asrf-dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #0f172a;
+}
+
+.asrf-dashboard-main {
+  flex: 1;
+  padding: 1.5rem 2rem 3rem 2rem;
+  overflow-y: auto;
+  max-width: 1600px;
+}
+
+/* ─── Topbar ─── */
+.asrf-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.asrf-page-title {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.asrf-page-subtitle {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin: 0.2rem 0 0 0;
+}
+
+.asrf-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.asrf-sim-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #334155;
+  letter-spacing: 0.04em;
+}
+
+.asrf-sim-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+}
+
+.asrf-sim-dot.pulse {
+  background: #f59e0b;
+  animation: pulse 1.5s infinite;
+}
+
+.asrf-sim-clock {
+  font-family: monospace;
+  font-size: 0.7rem;
+  color: #64748b;
+  padding-left: 0.25rem;
+  border-left: 1px solid #cbd5e1;
+}
+
+.asrf-sim-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.asrf-sim-btn:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+/* Dropdown */
+.asrf-dropdown-wrapper {
+  position: relative;
+}
+
+.asrf-dropdown-trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  padding: 0.4rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #0f172a;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: all 0.15s ease;
+}
+
+.asrf-dropdown-trigger:hover,
+.asrf-dropdown-trigger.open {
+  border-color: #2563eb;
+  background-color: #f8fafc;
+}
+
+.asrf-dropdown-chevron {
+  color: #64748b;
+  transition: transform 0.2s ease;
+}
+
+.asrf-dropdown-chevron.rotated {
+  transform: rotate(180deg);
+}
+
+.asrf-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 210px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  z-index: 100;
+  padding: 0.35rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.asrf-dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #334155;
+  cursor: pointer;
+  transition: background 0.12s ease;
+}
+
+.asrf-dropdown-item:hover {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+.asrf-dropdown-item.selected {
+  background-color: #eff6ff;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.asrf-date-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #475569;
+}
+
+.asrf-user-initial {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #0b1328;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: 2px solid #e2e8f0;
+}
+
+/* Subsystem Filter Banner */
+.asrf-subsystem-banner {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e40af;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.asrf-banner-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #2563eb;
+}
+
+.asrf-banner-reset {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #2563eb;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.78rem;
+}
+
+.asrf-banner-reset:hover {
+  text-decoration: underline;
+}
+
+/* ─── 4 Primary KPI Cards ─── */
+.asrf-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.asrf-kpi-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.15rem 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.asrf-kpi-top {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+.asrf-kpi-icon-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.asrf-icon--green { background: #dcfce7; color: #16a34a; }
+.asrf-icon--blue { background: #dbeafe; color: #2563eb; }
+.asrf-icon--purple { background: #f3e8ff; color: #9333ea; }
+.asrf-icon--red { background: #fee2e2; color: #dc2626; }
+.asrf-icon--cyan { background: #cffafe; color: #0891b2; }
+.asrf-icon--amber { background: #fef3c7; color: #d97706; }
+
+.asrf-kpi-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.asrf-kpi-body {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.asrf-kpi-val {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+
+.asrf-kpi-unit {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.asrf-kpi-trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+}
+
+.asrf-trend--up { background: #dcfce7; color: #15803d; }
+.asrf-trend--down { background: #fee2e2; color: #b91c1c; }
+.asrf-trend--neutral { background: #f1f5f9; color: #475569; }
+
+.asrf-kpi-sub {
+  font-size: 0.74rem;
+  color: #94a3b8;
+  margin-top: 0.2rem;
+}
+
+/* ─── 4 Sensor Metric Cards ─── */
+.asrf-sensor-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.asrf-sensor-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.asrf-sensor-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.asrf-sensor-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.asrf-sensor-name {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.asrf-sensor-val {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.45rem;
+}
+
+.asrf-sensor-spark {
+  width: 100%;
+  height: 20px;
+}
+
+.asrf-spark-line {
+  width: 100%;
+  height: 100%;
+}
+
+/* ─── 6 Scientific Charts Section ─── */
+.asrf-charts-section {
+  background: transparent;
+}
+
+.asrf-section-title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.asrf-chart-section-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.asrf-chart-section-desc {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin: 0.2rem 0 0 0;
+}
+
+.asrf-demo-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #0b1328;
+  color: #ffffff;
+  border: none;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.asrf-demo-action-btn:hover {
+  background: #1e293b;
+}
+
+/* 6 Charts Grid: 3 columns x 2 rows */
+.asrf-six-charts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.asrf-chart-panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px;
+}
+
+.asrf-panel-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.asrf-chart-type-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  margin-bottom: 0.25rem;
+  font-family: monospace;
+}
+
+.asrf-chart-type-tag.line { background: #eff6ff; color: #1d4ed8; }
+.asrf-chart-type-tag.pie { background: #fef2f2; color: #b91c1c; }
+.asrf-chart-type-tag.bar { background: #f8fafc; color: #334155; border: 1px solid #e2e8f0; }
+.asrf-chart-type-tag.hist { background: #eef2ff; color: #4338ca; }
+.asrf-chart-type-tag.scatter { background: #f0f9ff; color: #0369a1; }
+.asrf-chart-type-tag.area { background: #f0fdfa; color: #0f766e; }
+
+.asrf-panel-title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.asrf-panel-metric {
+  text-align: right;
+}
+
+.asrf-panel-metric-val {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  font-family: monospace;
+}
+
+.asrf-panel-metric-unit {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-left: 0.2rem;
+}
+
+.asrf-chart-canvas {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 160px;
+}
+
+.asrf-svg-chart {
+  width: 100%;
+  height: 100%;
+  max-height: 175px;
+}
+
+.asrf-panel-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.6rem;
+  margin-top: 0.5rem;
+  border-top: 1px solid #f1f5f9;
+  font-size: 0.72rem;
+  color: #64748b;
+}
+
+.asrf-status-nominal {
+  font-weight: 700;
+  color: #16a34a;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+}
+
+/* Pie Chart Layout */
+.asrf-pie-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.asrf-pie-svg-box {
+  width: 130px;
+  height: 130px;
+}
+
+.asrf-pie-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.asrf-hoverable-slice {
+  cursor: pointer;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.asrf-hoverable-slice:hover {
+  opacity: 0.85;
+  filter: brightness(1.08);
+}
+
+.asrf-pie-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+/* Bar Chart */
+.asrf-bar-chart-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.asrf-bar-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.asrf-bar-label-col {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+}
+
+.asrf-bar-name {
+  color: #475569;
+  font-weight: 500;
+}
+
+.asrf-bar-val {
+  color: #0f172a;
+  font-weight: 700;
+  font-family: monospace;
+}
+
+.asrf-bar-track {
+  width: 100%;
+  height: 6px;
+  background: #f1f5f9;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.asrf-bar-fill {
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 0.3s ease;
+}
+
+.asrf-hoverable-bar {
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.asrf-hoverable-bar:hover {
+  opacity: 0.8;
+}
+
+.asrf-hoverable-point {
+  cursor: pointer;
+  transition: transform 0.15s ease, r 0.15s ease;
+}
+
+.asrf-hoverable-point:hover {
+  r: 6;
+  filter: drop-shadow(0 0 4px rgba(37, 99, 235, 0.6));
+}
+
+/* ─── Floating Tooltip ─── */
+.asrf-floating-tooltip {
+  position: fixed;
+  background: rgba(11, 19, 40, 0.94);
+  color: #ffffff;
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+  z-index: 1200;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  animation: tooltipFade 0.1s ease-out;
+}
+
+@keyframes tooltipFade {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.asrf-tt-header {
+  font-weight: 700;
+  color: #93c5fd;
+  margin-bottom: 0.15rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.asrf-tt-val {
+  font-size: 0.85rem;
+  color: #ffffff;
+  margin-bottom: 0.15rem;
+}
+
+.asrf-tt-footer {
+  font-size: 0.65rem;
+  color: #94a3b8;
+  font-family: monospace;
+}
+
+/* Responsive */
+@media (max-width: 1280px) {
+  .asrf-six-charts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .asrf-kpi-grid,
+  .asrf-sensor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .asrf-six-charts-grid {
+    grid-template-columns: 1fr;
+  }
+}
