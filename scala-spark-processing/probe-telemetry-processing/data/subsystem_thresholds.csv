@@ -1,0 +1,9 @@
+subsystem,critical_threshold,nominal_min,nominal_max,safety_protocol
+Power,36.0,28.0,34.0,PROTO-PWR-SAFE-1
+Thermal,55.0,-20.0,45.0,PROTO-THM-COOL-2
+Navigation,1.5,0.0,0.5,PROTO-NAV-REALIGN-3
+Communication,50.0,20.0,45.0,PROTO-COM-BOOST-4
+Mobility,60.0,0.0,50.0,PROTO-MOB-STOP-5
+Science,10.0,-50.0,5.0,PROTO-SCI-STOW-6
+Control,85.0,10.0,70.0,PROTO-CTL-FAILSAFE-7
+Environment,1.0,0.0,0.5,PROTO-ENV-SHIELD-8
