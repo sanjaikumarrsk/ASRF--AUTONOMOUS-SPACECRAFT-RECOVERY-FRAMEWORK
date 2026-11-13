@@ -1,0 +1,104 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R
+   /MediaBox [0 0 612 842]
+   /Contents 4 0 R
+   /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >>
+>>
+endobj
+4 0 obj
+<< /Length 2053 >>
+stream
+BT
+/F1 16 Tf
+50 780 Td
+(CELESTIAL-X - AUTONOMOUS FAULT-RECOVERY SIMULATOR) Tj
+0 -24 Td
+/F1 12 Tf
+(Computational Core Verification Report - EVT-PRC-0042) Tj
+0 -18 Td
+/F2 9 Tf
+(DOCUMENT ID: DOC-5BD1AA87  |  GENERATED: 2026-11-09T13:12:45Z) Tj
+0 -15 Td
+(DATA CLASSIFICATION: SIMULATED RESEARCH DEMONSTRATOR - NASA/JPL/ESA REFERENCE) Tj
+0 -20 Td
+/F2 9 Tf
+0 -8 Td
+(----------------------------------------------------------------------------------------------------) Tj
+0 -13 Td
+(CELESTIAL-X AEROSPACE ENGINEERING REPORT: COMPUTATIONAL CORE VERIFICATION REPORT) Tj
+0 -13 Td
+(EVENT REFERENCE: EVT-PRC-0042   |   SUBSYSTEM: Flight Computer) Tj
+0 -13 Td
+(COMPONENT: Main Flight Computer \(CMP-FC-001\)) Tj
+0 -16 Td
+/F1 10 Tf
+(TIMESTAMP: 2026-11-09T12:27:45.636124+00:00) Tj
+/F2 9 Tf
+0 -8 Td
+(----------------------------------------------------------------------------------------------------) Tj
+0 -10 Td
+0 -16 Td
+/F1 10 Tf
+(1. SAFETY & COMMAND AUTHORIZATION MATRIX) Tj
+/F2 9 Tf
+0 -13 Td
+(   Command ID: CMD-PRC-042) Tj
+0 -13 Td
+(   Target: Flight Processor Module A) Tj
+0 -13 Td
+(   Action: PROCESSOR_RESTART \(Timeout: 12s\)) Tj
+0 -13 Td
+(   Check 1 [Command Validity]:         PASSED - Syntax and opcodes verified) Tj
+0 -13 Td
+(   Check 2 [Safety Constraints]:       PASSED - Bus current within safe envelope) Tj
+0 -13 Td
+(   Check 3 [Verified Library]:         VERIFIED - Present in Golden Image Library) Tj
+0 -13 Td
+(   Check 4 [Recovery Consistency]:     PASSED - Aligns with fault signature) Tj
+0 -13 Td
+(   Check 5 [Rollback Availability]:    PASSED - Snapshot RB-PRC-042 active) Tj
+0 -13 Td
+(   Check 6 [Authorization Status]:     AUTHORIZED FOR TIMED EXECUTION) Tj
+0 -10 Td
+0 -8 Td
+(----------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+/F1 10 Tf
+(ENGINEERING CERTIFICATION:) Tj
+/F2 9 Tf
+0 -13 Td
+(AUTONOMOUS FAULT-RECOVERY SIMULATION COMPLETE - ALL AUDIT LOGS RECORDED) Tj
+0 -8 Td
+(----------------------------------------------------------------------------------------------------) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000260 00000 n 
+0000002365 00000 n 
+0000002440 00000 n 
+trailer
+<< /Size 7
+   /Root 1 0 R
+>>
+startxref
+2508
+%%EOF

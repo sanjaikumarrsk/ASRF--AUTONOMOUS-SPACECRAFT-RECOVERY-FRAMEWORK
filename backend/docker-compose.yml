@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: autonomous-spacecraft-recovery-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${CELESTIAL_DB_NAME:-celestial_x}
+      POSTGRES_USER: ${CELESTIAL_DB_USERNAME:-celestial_x}
+      POSTGRES_PASSWORD: ${CELESTIAL_DB_PASSWORD:?Set CELESTIAL_DB_PASSWORD before starting Postgres}
+    ports:
+      - "${CELESTIAL_DB_PORT:-5432}:5432"
+    volumes:
+      - celestial_x_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  celestial_x_postgres_data:

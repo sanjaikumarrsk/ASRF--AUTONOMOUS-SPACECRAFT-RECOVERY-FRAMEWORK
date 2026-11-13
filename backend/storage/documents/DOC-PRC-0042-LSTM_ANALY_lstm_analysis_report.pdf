@@ -1,0 +1,100 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R
+   /MediaBox [0 0 612 842]
+   /Contents 4 0 R
+   /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >>
+>>
+endobj
+4 0 obj
+<< /Length 1799 >>
+stream
+BT
+/F1 16 Tf
+50 780 Td
+(CELESTIAL-X - AUTONOMOUS FAULT-RECOVERY SIMULATOR) Tj
+0 -24 Td
+/F1 12 Tf
+(LSTM Analysis Report - EVT-PRC-0042) Tj
+0 -18 Td
+/F2 9 Tf
+(DOCUMENT ID: DOC-59BDB2F1  |  GENERATED: 2026-11-09T13:12:45Z) Tj
+0 -15 Td
+(DATA CLASSIFICATION: SIMULATED RESEARCH DEMONSTRATOR - NASA/JPL/ESA REFERENCE) Tj
+0 -20 Td
+/F2 9 Tf
+0 -8 Td
+(----------------------------------------------------------------------------------------------------) Tj
+0 -13 Td
+(CELESTIAL-X AEROSPACE ENGINEERING REPORT: LSTM ANALYSIS REPORT) Tj
+0 -13 Td
+(EVENT REFERENCE: EVT-PRC-0042   |   SUBSYSTEM: Flight Computer) Tj
+0 -13 Td
+(COMPONENT: Main Flight Computer \(CMP-FC-001\)) Tj
+0 -16 Td
+/F1 10 Tf
+(TIMESTAMP: 2026-11-09T12:27:45.636124+00:00) Tj
+/F2 9 Tf
+0 -8 Td
+(----------------------------------------------------------------------------------------------------) Tj
+0 -10 Td
+0 -16 Td
+/F1 10 Tf
+(1. TEMPORAL DEEP LEARNING INFERENCE) Tj
+/F2 9 Tf
+0 -13 Td
+(   Model: Bi-Directional LSTM Temporal Anomaly Analyzer \(Simulated\)) Tj
+0 -13 Td
+(   Sliding Input Window: 60 Telemetry Samples across 24 Feature Dimensions) Tj
+0 -13 Td
+(   Sequence Length Evaluated: 30 Time Steps) Tj
+0 -13 Td
+(   Anomaly Score: 0.87 \(Threshold: 0.65\)) Tj
+0 -13 Td
+(   Fault Probability: 0.91 \(Class: THERMAL_LOAD_RUNAWAY\)) Tj
+0 -13 Td
+(   Root Cause Confidence: 88.4%) Tj
+0 -13 Td
+(   Classification: Processor thermal-load runaway instability) Tj
+0 -10 Td
+0 -8 Td
+(----------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+/F1 10 Tf
+(ENGINEERING CERTIFICATION:) Tj
+/F2 9 Tf
+0 -13 Td
+(AUTONOMOUS FAULT-RECOVERY SIMULATION COMPLETE - ALL AUDIT LOGS RECORDED) Tj
+0 -8 Td
+(----------------------------------------------------------------------------------------------------) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000260 00000 n 
+0000002111 00000 n 
+0000002186 00000 n 
+trailer
+<< /Size 7
+   /Root 1 0 R
+>>
+startxref
+2254
+%%EOF

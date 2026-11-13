@@ -1,0 +1,108 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R
+   /MediaBox [0 0 612 842]
+   /Contents 4 0 R
+   /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >>
+>>
+endobj
+4 0 obj
+<< /Length 2267 >>
+stream
+BT
+/F1 16 Tf
+50 780 Td
+(CELESTIAL-X - AUTONOMOUS FAULT-RECOVERY SIMULATOR) Tj
+0 -24 Td
+/F1 12 Tf
+(Safety Verification Report - EVT-PRC-0042) Tj
+0 -18 Td
+/F2 9 Tf
+(DOCUMENT ID: DOC-8ACD107E  |  GENERATED: 2026-11-09T13:12:45Z) Tj
+0 -15 Td
+(DATA CLASSIFICATION: SIMULATED RESEARCH DEMONSTRATOR - NASA/JPL/ESA REFERENCE) Tj
+0 -20 Td
+/F2 9 Tf
+0 -8 Td
+(----------------------------------------------------------------------------------------------------) Tj
+0 -13 Td
+(CELESTIAL-X AEROSPACE ENGINEERING REPORT: SAFETY VERIFICATION REPORT) Tj
+0 -13 Td
+(EVENT REFERENCE: EVT-PRC-0042   |   SUBSYSTEM: Flight Computer) Tj
+0 -13 Td
+(COMPONENT: Main Flight Computer \(CMP-FC-001\)) Tj
+0 -16 Td
+/F1 10 Tf
+(TIMESTAMP: 2026-11-09T12:27:45.636124+00:00) Tj
+/F2 9 Tf
+0 -8 Td
+(----------------------------------------------------------------------------------------------------) Tj
+0 -10 Td
+0 -16 Td
+/F1 10 Tf
+(1. COMPLETE RECOVERY EVENT LIFECYCLE SUMMARY) Tj
+/F2 9 Tf
+0 -13 Td
+(   T+00:00 - Telemetry anomaly detected on Main Flight Computer) Tj
+0 -13 Td
+(   T+00:02 - Spark + Scala telemetry ingestion completed normalization) Tj
+0 -13 Td
+(   T+00:04 - LSTM model identifies processor thermal-load instability \(94.2% conf\)) Tj
+0 -13 Td
+(   T+00:07 - PPO policy engine selects optimal action: PROCESSOR_RESTART) Tj
+0 -13 Td
+(   T+00:10 - Replication Core executes 3.0s simulated forward trial) Tj
+0 -13 Td
+(   T+00:13 - Replication Core verifies thermal stability and power margin) Tj
+0 -13 Td
+(   T+00:15 - Computational Core completes safety constraints validation) Tj
+0 -13 Td
+(   T+00:16 - Rollback path RB-PRC-042 verified and placed on standby) Tj
+0 -13 Td
+(   T+00:17 - Earth validation token exchanged and confirmed by Mission Control) Tj
+0 -13 Td
+(   T+00:19 - Execution verified on spacecraft bus) Tj
+0 -13 Td
+(   T+00:22 - Nominal operations resumed; mission continuity maintained) Tj
+0 -10 Td
+0 -8 Td
+(----------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+/F1 10 Tf
+(ENGINEERING CERTIFICATION:) Tj
+/F2 9 Tf
+0 -13 Td
+(AUTONOMOUS FAULT-RECOVERY SIMULATION COMPLETE - ALL AUDIT LOGS RECORDED) Tj
+0 -8 Td
+(----------------------------------------------------------------------------------------------------) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000260 00000 n 
+0000002579 00000 n 
+0000002654 00000 n 
+trailer
+<< /Size 7
+   /Root 1 0 R
+>>
+startxref
+2722
+%%EOF

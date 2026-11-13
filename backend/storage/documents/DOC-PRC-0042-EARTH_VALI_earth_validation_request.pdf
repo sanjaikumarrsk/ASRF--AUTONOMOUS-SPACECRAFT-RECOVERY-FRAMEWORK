@@ -1,0 +1,96 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R
+   /MediaBox [0 0 612 842]
+   /Contents 4 0 R
+   /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >>
+>>
+endobj
+4 0 obj
+<< /Length 1788 >>
+stream
+BT
+/F1 16 Tf
+50 780 Td
+(CELESTIAL-X - AUTONOMOUS FAULT-RECOVERY SIMULATOR) Tj
+0 -24 Td
+/F1 12 Tf
+(Earth Validation Request - EVT-PRC-0042) Tj
+0 -18 Td
+/F2 9 Tf
+(DOCUMENT ID: DOC-909D594E  |  GENERATED: 2026-11-09T13:12:45Z) Tj
+0 -15 Td
+(DATA CLASSIFICATION: SIMULATED RESEARCH DEMONSTRATOR - NASA/JPL/ESA REFERENCE) Tj
+0 -20 Td
+/F2 9 Tf
+0 -8 Td
+(----------------------------------------------------------------------------------------------------) Tj
+0 -13 Td
+(CELESTIAL-X AEROSPACE ENGINEERING REPORT: EARTH VALIDATION REQUEST) Tj
+0 -13 Td
+(EVENT REFERENCE: EVT-PRC-0042   |   SUBSYSTEM: Flight Computer) Tj
+0 -13 Td
+(COMPONENT: Main Flight Computer \(CMP-FC-001\)) Tj
+0 -16 Td
+/F1 10 Tf
+(TIMESTAMP: 2026-11-09T12:27:45.636124+00:00) Tj
+/F2 9 Tf
+0 -8 Td
+(----------------------------------------------------------------------------------------------------) Tj
+0 -10 Td
+0 -13 Td
+(1. DEEP-SPACE TRANSMISSION: MARS -> EARTH MISSION CONTROL) Tj
+0 -13 Td
+(   Request ID: VAL-REQ-2026-0198) Tj
+0 -13 Td
+(   Downlink Channel: X-Band Direct-to-Earth \(DSN Station 43 Canberra\)) Tj
+0 -13 Td
+(   One-Way Light Time Delay: 12.8 seconds \(simulated\)) Tj
+0 -13 Td
+(   Requested Ground Authorization: Critical Subsystem Reboot Authorization) Tj
+0 -13 Td
+(   Payload: Telemetry telemetry package, LSTM diagnosis, Replication Core logs) Tj
+0 -13 Td
+(   Status: TRANSMITTED - AWAITING GROUND STATION CONFIRMATION) Tj
+0 -10 Td
+0 -8 Td
+(----------------------------------------------------------------------------------------------------) Tj
+0 -16 Td
+/F1 10 Tf
+(ENGINEERING CERTIFICATION:) Tj
+/F2 9 Tf
+0 -13 Td
+(AUTONOMOUS FAULT-RECOVERY SIMULATION COMPLETE - ALL AUDIT LOGS RECORDED) Tj
+0 -8 Td
+(----------------------------------------------------------------------------------------------------) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000260 00000 n 
+0000002100 00000 n 
+0000002175 00000 n 
+trailer
+<< /Size 7
+   /Root 1 0 R
+>>
+startxref
+2243
+%%EOF

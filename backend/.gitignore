@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.python/
+.postgres-data/
+.postgres.log
+alembic/versions/__pycache__/
